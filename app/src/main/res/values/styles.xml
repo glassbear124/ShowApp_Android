@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="white_text">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="big_tagger">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shape_big_tagger</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">בחר</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="small_tagger">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shape_big_tagger</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">בחר</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="search_buttonset_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tint</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="main_cell_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="CustomTheme" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

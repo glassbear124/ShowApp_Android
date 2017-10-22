@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrlView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rnTabbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnScrl"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/lineColor"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/lnMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_bg"
+                    android:gravity="right|center_vertical"
+                    android:hint="שם אמן"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_bg"
+                    android:gravity="right|center_vertical"
+                    android:hint="אימייל מנהל"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.07"
+                    android:background="@drawable/round_bg"
+                    android:gravity="right|center_vertical"
+                    android:hint="סיסמת מנהל"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <Button
+                    android:id="@+id/randomizePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="צור סיסמה" />
+
+                <EditText
+                    android:id="@+id/editUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_bg"
+                    android:gravity="right|center_vertical"
+                    android:hint="לינק לתמונה //:http"
+                    android:maxLength="200"
+                    android:inputType="textUri"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <EditText
+                    android:id="@+id/editDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_bg"
+                    android:maxLength="300"
+                    android:gravity="right|top"
+                    android:hint="אודות אמן (מוגבל ל-300 תווים)"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/lnTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="תגיות ראשיות:"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtMainTag2"
+                            style="@style/big_tagger" />
+
+                        <TextView
+                            android:id="@+id/txtMainTag1"
+                            style="@style/big_tagger"
+                            android:layout_marginLeft="10dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="תגיות משניות:"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtMinorTag3"
+                            android:visibility="gone"
+                            style="@style/small_tagger" />
+
+                        <TextView
+                            android:id="@+id/txtMinorTag2"
+                            style="@style/small_tagger"
+                            android:visibility="gone"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/txtMinorTag1"
+                            style="@style/small_tagger"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtPopularLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_horizontal"
+                        android:text="פופולארי?"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/PopularButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ToggleButton" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/btnRemove"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="מחק"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/btnArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:text="הוסף אמן"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="ביטול"
+                    android:textColor="@color/tint" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

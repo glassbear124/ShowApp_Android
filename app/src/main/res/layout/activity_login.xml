@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnScrl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                android:layout_marginTop="41dp"
+                android:layout_width="160dp"
+                android:layout_height="62dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lineColor"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/btnUserLogin"
+            android:textColor="@android:color/white"
+            android:text="@string/user_login"
+            android:layout_marginTop="70dp"
+            android:background="@color/tint"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btnArtistLogin"
+            android:textColor="@color/tint"
+            android:text="@string/artist_login"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

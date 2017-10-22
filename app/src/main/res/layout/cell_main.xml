@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cellBg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/txtBuy"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:text="@string/purchase"
+            android:textStyle="bold"
+            android:background="@color/tint"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_toLeftOf="@+id/lnRight"
+            android:background="@color/lineColor"
+            android:layout_marginRight="7dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txtBuy"
+            android:layout_toLeftOf="@+id/lnRight"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtLoc"
+                android:maxLines="1"
+                style="@style/main_cell_text"/>
+
+            <TextView
+                android:id="@+id/txtTime"
+                style="@style/main_cell_text"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                style="@style/main_cell_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnRight"
+            android:layout_width="60dp"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textSize="37dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtMonth"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="@string/month"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnDetail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="@color/lineColor"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:id="@+id/vDetail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_arrow">
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bgColor"/>
+
+</LinearLayout>

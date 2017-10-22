@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">ShowApp</string>
+
+    <string name="user_name">ריף כהן</string>
+
+    <string name="tab_about">אודות</string>
+    <string name="tab_consert">הופעות</string>
+    <string name="tab_music">מוזיקה</string>
+
+    <string name="enter">כניסה</string>
+    <string name="purchase">לרכישה</string>
+    <string name="free">חינם</string>
+
+    <string name="location_sample">מיקום: בארבי תל אביב</string>
+    <string name="time_sample">שעה: 20:30</string>
+    <string name="price_sample">מחיר: 120 ש״ח</string>
+
+    <string name="time_colon">שעה: </string>
+    <string name="price_colon">מחיר: </string>
+
+    <string name="comment">ריף כהן נולדה וגדלה בתל אביב. הוריה הם פטריסיה וישראל כהן. אמה נולדה בתלמסאן שבאלגיריה ועם קבלת העצמאות של אלגריה ברחה לצרפת, גדלה בניס ועלתה לישראל בהיותה בת תשע עשרה. דודתו של סבה מצד אמה שרה בלאדינו באלגריה והוציאה תקליט. הוריו של אביה</string>
+
+    <string name="month">אוגוסט</string>
+
+    <string name="favorite">מועדפים</string>
+    <string name="account"> משתמש</string>
+    <string name="login">התחבר</string>
+    <string name="hi_gil">היי אורח,</string>
+    <string name="what_do_you">מצא הופעה על פי הקטגוריות.</string>
+
+    <string name="today_event">ארועים באזור שלך היום</string>
+    <string name="popular_artise">אמנים פופולאריים</string>
+
+    <string name="location">באזור שלי</string>
+    <string name="stage">במות</string>
+    <string name="artist">אמנים</string>
+    <string name="festival">פסטיבלים</string>
+
+    <string name="short_meta">22:00 בארבי, תל אביב</string>
+
+    <string name="tag">תגיות</string>
+    <string name="show">הופעות</string>
+
+    <!-- login -->
+    <string name="user_login">כניסת משתמש</string>
+    <string name="artist_login">כניסת אמן/במה</string>
+
+    <string name="blue_btn_text">התחבר עם פייסבוק</string>
+    <string name="hint_email">כתובת מייל</string>
+    <string name="hint_username">הקש שם משתמש</string>
+    <string name="hint_password">הקש סיסמה</string>
+
+    <string name="green_btn_artist">התחבר</string>
+    <string name="green_btn_user">התחבר עם חשבון ShowApp</string>
+    <string name="pink_btn_text">הרשמה</string>
+    <string name="bottom_text_user">אין לך חשבון? הרשם עכשיו.</string>
+    <string name="bottom_text_artist">אמן, מפיק, בעל מקום לארועים? הצטרף אלינו</string>
+
+    <string name="LoggingIn">מתחבר</string>
+    <string name="PleaseWait">אנא המתן</string>
+    <string name="ErrorFetchingData">אירעה שגיאה</string>
+    <string name="InternetError">אין חיבור אינטרנט</string>
+    <string name="InternetRequiredToLogin">אנא וודא כי קיים חיבור לאינטרנט ונסה שנית.</string>
+
+    <string name="play">נגן</string>
+
+    <string name="location_hint">חפש במה</string>
+
+
+
+    <string name="facebook_app_id">1668870713406878</string>
+    <string name="fb_login_protocol_scheme">fb1668870713406878</string>
+
+
+</resources>

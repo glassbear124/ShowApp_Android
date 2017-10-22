@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bgColor">#101436</color>
+    <color name="lineColor">#696a80</color>
+    <color name="lightlineColor">#aaaaaa</color>
+    <color name="cellBg">#2f2f4b</color>
+    <color name="tint">#e5007e</color>
+    <color name="blue">#0071bc</color>
+    <color name="green">#39b54a</color>
+    <color name="pink">#93278f</color>
+    <color name="white">#ffffff</color>
+</resources>

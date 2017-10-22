@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnScrl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                android:layout_marginTop="41dp"
+                android:layout_width="160dp"
+                android:layout_height="62dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lineColor"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/editUsername"
+            style="@style/edit_text"
+            android:inputType="text"
+            android:hint="*  הקש שם" />
+
+        <EditText
+            android:id="@+id/editAge"
+            style="@style/edit_text"
+            android:inputType="numberDecimal"
+            android:hint="הקש גיל"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:inputType="phone"
+            android:hint="הקש טלפון"
+            style="@style/edit_text"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            style="@style/edit_text"
+            android:inputType="textEmailAddress"
+            android:hint="*  הקש מייל" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            style="@style/edit_text"
+            android:inputType="textPassword"
+            android:hint="הקש סיסמה *" />
+
+        <EditText
+            android:id="@+id/editVerifyPassword"
+            style="@style/edit_text"
+            android:inputType="textPassword"
+            android:hint="הקש סיסמה שנית *" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:textColor="@android:color/white"
+            android:text="@string/pink_btn_text"
+            android:layout_marginTop="40dp"
+            android:background="@color/pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+
+    <LinearLayout
+        android:background="#e0ffffff"
+        android:orientation="vertical"
+        android:id="@+id/rlActionSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvActionSheetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="בחר אפשרות הזמנה"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="טלפון"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txtUrl"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="אינטרנט"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</RelativeLayout>

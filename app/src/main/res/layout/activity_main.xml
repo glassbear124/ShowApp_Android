@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrlView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rnTabbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnScrl"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="33dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_width="160dp"
+            android:layout_height="44dp" />
+
+    </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/lineColor"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgArtist"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/image"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@color/tint"/>
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPhoneLabel"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtBuy"
+                    android:layout_width="80dp"
+                    android:layout_height="42dp"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:text="@string/purchase"
+                    android:textStyle="bold"
+                    android:background="@color/tint"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ToggleButton
+                        android:id="@+id/btnFollow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:textOn=""
+                        android:textOff=""
+                        android:background="@drawable/heart_line_132"/>
+
+                    <TextView
+                        android:id="@+id/txtLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/lnMusic"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/lnConsert"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtFestival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnAbout"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="right"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:id="@+id/txtBigTag1"
+                            style="@style/big_tagger" />
+
+                        <TextView
+                            android:id="@+id/txtBigTag2"
+                            android:layout_marginLeft="10dp"
+                            style="@style/big_tagger" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:id="@+id/txtSmallTag1"
+                            style="@style/small_tagger" />
+
+                        <TextView
+                            android:id="@+id/txtSmallTag2"
+                            android:layout_marginLeft="10dp"
+                            style="@style/small_tagger" />
+
+                        <TextView
+                            android:id="@+id/txtSmallTag3"
+                            android:layout_marginLeft="10dp"
+                            style="@style/small_tagger" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rnTabbar"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="33dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/tab_about"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/tint"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/txtAbout"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor"/>
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/txtConsert"
+            android:layout_toLeftOf="@+id/txtAbout"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/tab_consert"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/musicBarLine"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/txtConsert"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor"/>
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/txtMusic"
+            android:layout_toLeftOf="@+id/txtConsert"
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/tab_music"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1725236111408849/7591954615">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

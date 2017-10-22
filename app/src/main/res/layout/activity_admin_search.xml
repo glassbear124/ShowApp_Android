@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrlView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rnTabbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnScrl"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ToggleButton
+                    android:id="@+id/btnHeart"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:checked="true"
+                    android:textOn="@string/favorite"
+                    android:textOff="@string/favorite"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/heart_fill_40" />
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/lineColor"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtHello"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:gravity="right"
+                    android:text="@string/hi_gil"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/txtWhatdoyou"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="right"
+                    android:text="@string/what_do_you"
+                    android:textColor="@android:color/white"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape"
+                    android:layout_height="40dp">
+
+                    <View
+                        android:id="@+id/icnLens"
+                        android:layout_margin="8dp"
+                        android:layout_width="24dp" android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lens"/>
+
+                    <EditText
+                        android:layout_toLeftOf="@+id/icnLens"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text"
+                        android:gravity="right|center_vertical"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- search button set -->
+            <LinearLayout
+                android:id="@+id/lnSearchButtonSet"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:id="@+id/btnArtist1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgArtist"
+                        android:layout_above="@+id/txtArtist1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/btn_artist"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        style="@style/search_buttonset_text"
+                        android:id="@+id/txtArtist1"
+                        android:text="@string/artist"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnFestival1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgFestival"
+                        android:layout_above="@+id/txtFestival1"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_festival"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtFestival1"
+                        style="@style/search_buttonset_text"
+                        android:text="@string/festival"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnStage1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgStage"
+                        android:layout_above="@+id/txtStage1"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_stage"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtStage1"
+                        style="@style/search_buttonset_text"
+                        android:text="@string/stage"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnTag"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgTag"
+                        android:layout_above="@+id/txtTag"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_sharp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtTag"
+                        style="@style/search_buttonset_text"
+                        android:text="@string/location"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnShow"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgShow"
+                        android:layout_above="@+id/txtShow"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_horn"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtShow"
+                        style="@style/search_buttonset_text"
+                        android:text="@string/show"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- home button set -->
+            <LinearLayout
+                android:id="@+id/lnHomeButtonSet"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:id="@+id/btnLocation"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_above="@+id/txtLoc"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_location"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtLoc"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_horizontal"
+                        android:text="@string/location"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnStage"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_above="@+id/txtStage"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_stage"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtStage"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stage"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnArtist"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_above="@+id/txtArtist"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_artist"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtArtist"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_horizontal"
+                        android:text="@string/artist"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnFestival"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_above="@+id/txtFestival"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/btn_festival"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtFestival"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_horizontal"
+                        android:text="@string/festival"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/lineColor"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"/>
+
+            <!-- Search Detail -->
+            <LinearLayout
+                android:id="@+id/lnSearchDetail"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/tint"
+                        android:text="Locations: All"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/tint"
+                        android:gravity="right"
+                        android:text="Dates:Today"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- lnHomeDetail -->
+            <LinearLayout
+                android:id="@+id/lnHomeDetail"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/today_event"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content" />
+
+                <offek.com.showapp.PagerContainer
+                    android:id="@+id/pager_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"/>
+                </offek.com.showapp.PagerContainer>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/lineColor"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/popular_artise"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content" />
+
+                <offek.com.showapp.PagerContainer
+                    android:id="@+id/pager_container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"/>
+                </offek.com.showapp.PagerContainer>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cellBg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <View
+            android:id="@+id/btnHeart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/heart_line_132"/>
+
+        <ImageView
+            android:id="@+id/imgThumb"
+            android:layout_width="120dp"
+            android:src="@drawable/image"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/imgThumb"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@android:color/white"
+                android:text="@string/time_sample"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtName"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="right|center_vertical"
+                android:text="@string/user_name"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtLoc"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center_vertical"
+                android:textColor="@android:color/white"
+                android:text="@string/location_sample"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/txtMainTag1"
+                    style="@style/small_tagger" />
+
+                <TextView
+                    android:id="@+id/txtMainTag2"
+                    android:layout_marginLeft="5dp"
+                    style="@style/small_tagger" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bgColor"/>
+
+</LinearLayout>

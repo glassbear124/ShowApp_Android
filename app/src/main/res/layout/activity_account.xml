@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cellBg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rnTop"
+        android:background="@color/bgColor"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <View
+            android:id="@+id/btnX"
+            android:background="@drawable/btn_x"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="החשבון שלי"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/rnTop"
+        android:layout_above="@+id/vBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_marginTop="40dp"
+            android:background="@color/lightlineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/lnCell1"
+            android:orientation="horizontal"
+            android:background="@color/bgColor"
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <View
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/heart_fill_132"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:text="@string/favorite"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:gravity="left"/>
+
+            <View
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icn_detail"
+                android:layout_width="10dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/lightlineColor"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/lnCell2"
+            android:orientation="horizontal"
+            android:background="@color/bgColor"
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/btn_artist"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:text="ניהול"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:gravity="left"/>
+
+            <View
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icn_detail"
+                android:layout_width="10dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/lightlineColor"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/lnCell3"
+            android:orientation="horizontal"
+            android:background="@color/bgColor"
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <View
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:text="התנתק"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+
+            <View
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icn_detail"
+                android:layout_width="10dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/lightlineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vBottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </View>
+
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrlView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rnTabbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnScrl"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:id="@+id/btnCheck"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_check"/>
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp" />
+
+                <View
+                    android:id="@+id/btnX"
+                    android:visibility="gone"
+                    android:background="@drawable/btn_x"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <ProgressBar
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/activityIndicator"
+                    android:indeterminateOnly="true"
+                    android:keepScreenOn="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:progressBackgroundTint="@android:color/white"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/lineColor"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/lnMain"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btnSelectDate"
+                    android:text="בחר תאריך"
+                    android:textColor="@android:color/white"
+                    android:background="@color/tint"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:text="תאריך נבחר: "
+                    android:textSize="14dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtLoc"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/location_hint"
+                    android:textSize="16dp"
+                    android:textColor="#757575"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/editFirst"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="מחיר"
+                    android:inputType="numberDecimal"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="אימייל מנהל"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="סיסמת מנהל"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/randomizePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="צור סיסמה" />
+
+                <EditText
+                    android:id="@+id/editStagePhone"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="מחיר"
+                    android:inputType="phone"
+                    android:visibility="gone"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/editUrl"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="לינק לתמונה //:http"
+                    android:inputType="textUri"
+                    android:maxLength="200"
+                    android:layout_height="40dp" />
+
+
+                <EditText
+                    android:id="@+id/editDesc"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|top"
+                    android:hint="אודות הופעה (מוגבל ל-300 תווים)"
+                    android:maxLength="300"
+                    android:inputType="textMultiLine"
+                    android:layout_height="120dp" />
+
+                <TextView
+                    android:id="@+id/popularTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="פופולארי?"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/popularToggleButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ToggleButton" />
+
+                <TextView
+                    android:id="@+id/btnAddshow"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:text="הוסף הופעה"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/btnRemove"
+                    android:background="@android:color/holo_red_dark"
+                    android:gravity="center"
+                    android:text="מחק"
+                    android:visibility="gone"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="ביטול"
+                    android:textColor="@color/tint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <!-- lnHeartDetail -->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/lnHeartDetail"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editLoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/round_bg"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/location_hint"
+                    android:inputType="text"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
